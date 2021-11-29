@@ -1,4 +1,4 @@
-FROM python:3.7.12
+FROM python:3.7
 
 COPY flask-sample /flask-sample
 WORKDIR /flask-sample
