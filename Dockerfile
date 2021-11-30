@@ -14,8 +14,8 @@ ENV FLASK_APP=flask-app.py
 RUN pip install -i https://pypi.douban.com/simple -r requirements.txt
 
 # 每次启动镜像时需要执行的命令
-#CMD flask run --host=0.0.0 --port=8080
-CMD flask run --port=8080
+CMD flask run --host=0.0.0 --port=8080
+#CMD flask run --port=8080
 
 # 公开一个端口
 EXPOSE 8080
