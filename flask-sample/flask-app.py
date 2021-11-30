@@ -3,11 +3,11 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-#@app.route('/', methods = ['GET'])
+@app.route('/', methods = ['GET'])
 def hello():
     return yhsj(9)
 
-@app.route('/', methods = ['GET'])
+@app.route('/hello', methods = ['GET'])
 def say_hello():
     return 'Hello world'
 
