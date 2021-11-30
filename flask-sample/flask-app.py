@@ -7,6 +7,11 @@ app = Flask(__name__)
 def hello():
     return yhsj(9)
 
+@app.route('/hello', methods = ['GET'])
+def say_hello():
+    return 'Hello world'
+
+
 def yhsj(n):
     if n == 1:
         return [[1]]
